@@ -1,7 +1,3 @@
-# Getting Started
-
-# Conexa Examen Técnico
-
 ### Resumen sobre el desarrollo
 
 En la implementación de la API REST, optimicé la recuperación de datos de pokemones utilizando concurrencia para mejorar el rendimiento y evitar las limitaciones de hacer solicitudes secuenciales dentro de un bucle. En lugar de realizar peticiones en serie, que podrían causar tiempos de respuesta largos, implemente CompletableFuture junto con un ExecutorService para manejar múltiples solicitudes de manera asíncrona.
@@ -9,19 +5,6 @@ En la implementación de la API REST, optimicé la recuperación de datos de pok
 ### Levantar el Proyecto en Local
 
 docker-compose up --build
-
-#### Clonar el Repositorio:
-
-```bash
-git clone https://github.com/Joairazabal/conexa_test.git
-cd conexa
-```
-
-#### Ejecutar Docker Compose:
-
-```bash
-docker-compose up --build
-```
 
 Antes de ejecutar el comando, es necesario que tengas instalado Docker Desktop y que este abierto. Esto hara un build de
 los contenedores definidos en el docker-compose y los levantará para poder compilar el servidor.
